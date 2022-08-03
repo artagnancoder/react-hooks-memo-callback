@@ -1,0 +1,5 @@
+ - Como o key deve ser uma prop única, você consegue resolver substituindo o index do array pelo id do item, pois se a lista muda em algum momento algumas keys podem mudar no processo, causando renderizações desnecessárias.
+
+- Memo - O memo normalmente é utilizado em exports de componentes, mas nada impede que você o utilize dentro de um componente, mesmo que isto não seja recomendado. Veja isto funcionando na prática com o código que temos:
+
+- useMemo - o useMemo deve ser usado dentro de um componente, então, memoizando uma variável você a utiliza dentro do componente que você estiver, e terá no array de dependências os states/props necessários para que aquela variável atualize. Utilizar os states/props para atualizar também é possível no memo, mas, ao invés do array de dependências, teríamos que utilizar a função para comparar as props, e ela não é tão intuitiva quanto o useMemo.

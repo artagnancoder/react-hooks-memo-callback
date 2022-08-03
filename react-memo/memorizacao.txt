@@ -1,0 +1,23 @@
+Evitar renderizações desnecessárias
+
+useMemo = memorização de valores
+
+- O useMemo faz com que cálculos não sejam executados caso a informação que eles precisam não tenha sido alterada.É usado para evitar re-calculos complexos.
+
+
+memo = memorização de componentes
+
+Uso:
+
+1- Pure Functional Components
+2- Renders too often
+3- Re-renders with same props
+4- Mediu to big sizes
+
+useCallback = memorização de funções. É um bom uso utilizá-lo quando a função está dentro de um contexto ou sendo passada para outros componentes.
+
+Uso:
+
+1- Resolver problemas de igualdade referencial
+
+Shallow compare - comparação rasa
